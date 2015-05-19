@@ -57,6 +57,10 @@ set clipboard=unnamed
 " Copy to 'clipboard registry'
 vmap <C-c> "*y
 
+" Show line numbers
+
+set nu
+
 " Select all text
 nmap <C-a> ggVG
 
