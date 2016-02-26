@@ -1,6 +1,14 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/vimfiles/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -14,7 +22,10 @@ else
 endif
 colorscheme solarized
 
-set guifont=Courier_New:h9
+set fileencodings=utf-8
+set guifont=Courier_New:h14
+set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
+set list
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/vimfiles/bundle/Vundle.vim/
